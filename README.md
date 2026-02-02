@@ -12,6 +12,8 @@ ToDo List with React.js, TypeScript, Vite and Tailwind
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 - [PNPM](https://pnpm.io/pt/installation) - Package Manager
 - [Vite](https://vite.dev/) - Build Tool
+- [CSA](https://cva.style/docs) - library for creating component variants with CSS classes.
+- [Vite plugin svgr](https://www.npmjs.com/package/vite-plugin-svgr) - Vite plugin to transform SVGs into React components.
 
 ## 📦 Installation
 1. Clone the repository 
