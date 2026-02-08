@@ -1,5 +1,5 @@
 import React from "react"
-import type Icon from "./icon"
+import Icon from "./icon"
 import Text from "./text"
 import {cva, type VariantProps} from "class-variance-authority";
 
@@ -65,7 +65,9 @@ export default function Button({
     icon: IconComponent,
     ...props
 }: ButtonProps) {
-    return <button {...props}>
+    return <button 
+        className={buttonsVariants({variant, size, disabled, className})}
+        {...props}>
         {IconComponent && (
             <Icon 
                 svg={IconComponent}
