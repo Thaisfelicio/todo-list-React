@@ -5,12 +5,13 @@ import Icon from "./components/icon";
 import Badge from "./components/badge";
 import Button from "./components/button";
 import ButtonIcon from "./components/button-icon";
+import InputText from "./components/input-text";
 
 export default function App() {
   
 
   return (
-    <div className="grid gap-3">
+    <div className="grid gap-10">
       <Text>Olá mundo</Text>
       <Icon svg={TrashIcon} className="fill-green-base"/>
       <div>
@@ -24,6 +25,10 @@ export default function App() {
         <ButtonIcon icon={TrashIcon}></ButtonIcon>
         <ButtonIcon icon={TrashIcon} variant="secondary"></ButtonIcon>
         <ButtonIcon icon={TrashIcon} variant="tertiary"></ButtonIcon>
+      </div>
+
+      <div>
+        <InputText/>
       </div>
     </div>
     
