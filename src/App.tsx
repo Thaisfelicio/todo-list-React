@@ -8,11 +8,13 @@ import ButtonIcon from "./components/button-icon";
 import InputText from "./components/input-text";
 import InputCheckbox from "./components/input-checkbox";
 import Card from "./components/card";
+import Container from "./components/container";
 
 export default function App() {
   
 
   return (
+    <Container>
     <div className="grid gap-10">
       <Text>Olá mundo</Text>
       <Icon svg={TrashIcon} className="fill-green-base"/>
@@ -41,7 +43,7 @@ export default function App() {
         <Card>Olá mundo</Card>
       </div>
     </div>
-    
+    </Container>
   )
 }
 
