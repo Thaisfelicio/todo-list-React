@@ -9,6 +9,7 @@ import InputText from "./components/input-text";
 import InputCheckbox from "./components/input-checkbox";
 import Card from "./components/card";
 import Container from "./components/container";
+import Skeleton from "./components/skeleton";
 
 export default function App() {
   
@@ -41,6 +42,12 @@ export default function App() {
 
       <div>
         <Card>Olá mundo</Card>
+      </div>
+
+      <div className="space-y-2">
+        <Skeleton className="h-6"/>
+        <Skeleton className="h-6"/>
+        <Skeleton className="w-96 h-6"/>
       </div>
     </div>
     </Container>
