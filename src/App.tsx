@@ -30,6 +30,7 @@ export default function App() {
         <ButtonIcon icon={TrashIcon}></ButtonIcon>
         <ButtonIcon icon={TrashIcon} variant="secondary"></ButtonIcon>
         <ButtonIcon icon={TrashIcon} variant="tertiary"></ButtonIcon>
+        <ButtonIcon icon={TrashIcon} loading></ButtonIcon>
       </div>
 
       <div>
@@ -38,6 +39,11 @@ export default function App() {
 
       <div>
         <InputCheckbox/>
+        <InputCheckbox loading />
+      </div>
+
+      <div className="flex gap-1">
+        <Badge loading>5</Badge>
       </div>
 
       <div>
