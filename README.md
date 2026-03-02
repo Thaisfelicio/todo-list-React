@@ -4,9 +4,11 @@ ToDo List with React.js, TypeScript, Vite and Tailwind
 ![todo_list_image](readme_images/todo_list_image.png)
 
 ## 🚀Links
-* [Figma Design](https://www.figma.com/design/TAxEevA88S0FE3YVGYHuA0/Lista-de-Tarefas--Community-?node-id=3-376&p=f&t=dssHKjL2UhmkpBIk-0)
+
+- [Figma Design](https://www.figma.com/design/TAxEevA88S0FE3YVGYHuA0/Lista-de-Tarefas--Community-?node-id=3-376&p=f&t=dssHKjL2UhmkpBIk-0)
 
 ## 🛠️ Tech Stack
+
 - [React](https://react.dev/) - React framework for production
 - [TypeScript](https://www.typescriptlang.org/) - Programming Language
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
@@ -14,10 +16,13 @@ ToDo List with React.js, TypeScript, Vite and Tailwind
 - [Vite](https://vite.dev/) - Build Tool
 - [CSA](https://cva.style/docs) - library for creating component variants with CSS classes.
 - [Vite plugin svgr](https://www.npmjs.com/package/vite-plugin-svgr) - Vite plugin to transform SVGs into React components.
+- [useLocalStorage React Hook](https://www.npmjs.com/package/use-local-storage) - flexible React Hook for using Local Storage
 
 ## 📦 Installation
-1. Clone the repository 
-``` bash
+
+1. Clone the repository
+
+```bash
 git clone https://github.com/Thaisfelicio/todo-list-React.git
 ```
 
@@ -31,9 +36,9 @@ If you are developing a production application, we recommend updating the config
 
 ```js
 export default defineConfig([
-  globalIgnores(['dist']),
+  globalIgnores(["dist"]),
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ["**/*.{ts,tsx}"],
     extends: [
       // Other configs...
 
@@ -48,40 +53,40 @@ export default defineConfig([
     ],
     languageOptions: {
       parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
         tsconfigRootDir: import.meta.dirname,
       },
       // other options...
     },
   },
-])
+]);
 ```
 
 You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
 ```js
 // eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+import reactX from "eslint-plugin-react-x";
+import reactDom from "eslint-plugin-react-dom";
 
 export default defineConfig([
-  globalIgnores(['dist']),
+  globalIgnores(["dist"]),
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ["**/*.{ts,tsx}"],
     extends: [
       // Other configs...
       // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
+      reactX.configs["recommended-typescript"],
       // Enable lint rules for React DOM
       reactDom.configs.recommended,
     ],
     languageOptions: {
       parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
         tsconfigRootDir: import.meta.dirname,
       },
       // other options...
     },
   },
-])
+]);
 ```
