@@ -15,7 +15,30 @@ export default function useTask() {
     ]);
   }
 
+  function updateTask(id: string, payload: { tittle: Task["title"] }) {
+    setTasks(
+      tasks.map((task) =>
+        task.id === id ? { ...task, state: "created", ...payload } : task,
+      ),
+    );
+  }
+
+  function updateTaskStatus(id: string, concluded: Task["concluded"]) {
+    setTasks(
+      tasks.map((task) =>
+        task.id === id
+          ? {
+              ...task,
+              concluded,
+            }
+          : task,
+      ),
+    );
+  }
+
   return {
     prepareTask,
+    updateTask,
+    updateTaskStatus,
   };
 }

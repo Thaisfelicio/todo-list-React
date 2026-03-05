@@ -16,13 +16,18 @@ export default function TaskList() {
   return (
     <>
       <section>
-        <Button icon={PlusIcon} className="w-full" onClick={handleNewTask}>
+        <Button
+          icon={PlusIcon}
+          className="w-full"
+          onClick={handleNewTask}
+          disabled={tasks.some((task) => task.state === "creating")}
+        >
           Nova Tarefa
         </Button>
       </section>
       <section className="space-y-2">
         {tasks.map((task) => (
-          <TaskItem key={task.id} />
+          <TaskItem key={task.id} task={task} />
         ))}
       </section>
     </>
